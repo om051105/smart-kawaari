@@ -16,23 +16,24 @@
                 <i class="fas fa-recycle"></i> SMART <span>KAWAARI</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#rates">Price Guide</a></li>
-                <li><a href="#calculator">Eco-Impact</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#rates" data-i18n="nav_rates">Price Guide</a></li>
+                <li><a href="#calculator" data-i18n="nav_impact">Eco-Impact</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><button id="langSwitch" style="background: none; border: 1px solid var(--primary); color: var(--primary); padding: 0.4rem 0.8rem; border-radius: 8px; cursor: pointer; font-weight: 600;">हिन्दी</button></li>
             </ul>
-            <a href="tel:+916201243683" class="cta-button">Call Now</a>
+            <a href="tel:+916201243683" class="cta-button" data-i18n="nav_call">Call Now</a>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Clean City,<br><span>Green Future</span></h1>
-                <p>Welcome to Smart Kawaari. We provide professional waste management solutions for residential, corporate, and industrial sectors. Turn your scrap into value while saving the planet.</p>
+                <h1 data-i18n="hero_title">Clean City,<br><span>Green Future</span></h1>
+                <p data-i18n="hero_desc">Welcome to Smart Kawaari. We provide professional waste management solutions for residential, corporate, and industrial sectors. Turn your scrap into value while saving the planet.</p>
                 <div style="display:flex; gap:1rem;">
-                    <a href="https://wa.me/916201243683" class="cta-button" style="background: #25d366;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-                    <a href="#services" class="cta-button" style="background: var(--secondary);">Our Services</a>
+                    <a href="https://wa.me/916201243683" class="cta-button" style="background: #25d366;"><i class="fab fa-whatsapp"></i> <span data-i18n="hero_wa">WhatsApp Us</span></a>
+                    <a href="#services" class="cta-button" style="background: var(--secondary);" data-i18n="hero_services">Our Services</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -43,41 +44,41 @@
 
     <section id="services" class="services">
         <div class="section-header">
-            <h2>Our Premium Services</h2>
-            <p>We handle all types of scrap with professional care and eco-friendly disposal methods.</p>
+            <h2 data-i18n="services_title">Our Premium Services</h2>
+            <p data-i18n="services_desc">We handle all types of scrap with professional care and eco-friendly disposal methods.</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
                 <img src="assets/plastic.png" alt="Plastic Recycling">
-                <h3>Plastic Recycling</h3>
-                <p>From PET bottles to industrial plastics, we ensure high-quality recycling and zero waste.</p>
+                <h3 data-i18n="service_plastic_title">Plastic Recycling</h3>
+                <p data-i18n="service_plastic_desc">From PET bottles to industrial plastics, we ensure high-quality recycling and zero waste.</p>
             </div>
             <div class="service-card">
                 <img src="assets/metal.png" alt="Metal Scrap">
-                <h3>Metal Scrap</h3>
-                <p>Top prices for iron, aluminum, copper, and mixed metal scrap. Instant weighing and payment.</p>
+                <h3 data-i18n="service_metal_title">Metal Scrap</h3>
+                <p data-i18n="service_metal_desc">Top prices for iron, aluminum, copper, and mixed metal scrap. Instant weighing and payment.</p>
             </div>
             <div class="service-card">
                 <img src="assets/ewaste.png" alt="E-Waste">
-                <h3>E-Waste Management</h3>
-                <p>Certified disposal of electronic waste including old computers, phones, and appliances.</p>
+                <h3 data-i18n="service_ewaste_title">E-Waste Management</h3>
+                <p data-i18n="service_ewaste_desc">Certified disposal of electronic waste including old computers, phones, and appliances.</p>
             </div>
             <div class="service-card">
                 <img src="assets/paper.png" alt="Paper Waste">
-                <h3>Paper & Cardboard</h3>
-                <p>Bulk collection of office paper, old newspapers, and corrugated boxes for recycling.</p>
+                <h3 data-i18n="service_paper_title">Paper & Cardboard</h3>
+                <p data-i18n="service_paper_desc">Bulk collection of office paper, old newspapers, and corrugated boxes for recycling.</p>
             </div>
         </div>
     </section>
 
     <section id="calculator" style="background: var(--secondary); color: white; padding: 100px 2rem;">
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Calculate Your Eco-Impact</h2>
-            <p style="margin-bottom: 3rem; opacity: 0.9;">See how much of a difference your contribution makes to the environment.</p>
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem;" data-i18n="calc_title">Calculate Your Eco-Impact</h2>
+            <p style="margin-bottom: 3rem; opacity: 0.9;" data-i18n="calc_desc">See how much of a difference your contribution makes to the environment.</p>
             
             <div style="background: rgba(255,255,255,0.1); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.2);">
                 <div style="margin-bottom: 2rem;">
-                    <label style="display: block; margin-bottom: 1rem; font-weight: 500;">Scrap Weight (approx. kg)</label>
+                    <label style="display: block; margin-bottom: 1rem; font-weight: 500;" data-i18n="calc_label">Scrap Weight (approx. kg)</label>
                     <input type="range" id="weightRange" min="5" max="500" value="50" style="width: 100%; accent-color: var(--primary);">
                     <div style="font-size: 1.5rem; font-weight: 700; margin-top: 1rem;"><span id="weightValue">50</span> KG</div>
                 </div>
@@ -85,15 +86,15 @@
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
                     <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: var(--radius-md);">
                         <div style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"><span id="treesSaved">5</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Trees Saved</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;" data-i18n="calc_trees">Trees Saved</div>
                     </div>
                     <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: var(--radius-md);">
                         <div style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"><span id="waterSaved">1.2</span>k</div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">Liters Water</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;" data-i18n="calc_water">Liters Water</div>
                     </div>
                     <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: var(--radius-md);">
                         <div style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);"><span id="co2Reduced">15</span></div>
-                        <div style="font-size: 0.9rem; opacity: 0.8;">kg CO2 Reduced</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;" data-i18n="calc_co2">kg CO2 Reduced</div>
                     </div>
                 </div>
             </div>
@@ -106,21 +107,21 @@
                 <div class="logo" style="margin-bottom: 1.5rem;">
                     <i class="fas fa-recycle"></i> SMART <span>KAWAARI</span>
                 </div>
-                <p style="color: var(--text-muted);">Leading the way in sustainable waste management. Professional service for a cleaner planet.</p>
+                <p style="color: var(--text-muted);" data-i18n="footer_desc">Leading the way in sustainable waste management. Professional service for a cleaner planet.</p>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.5rem; color: var(--secondary);">Quick Links</h4>
+                <h4 style="margin-bottom: 1.5rem; color: var(--secondary);" data-i18n="footer_links">Quick Links</h4>
                 <ul style="list-style: none;">
-                    <li style="margin-bottom: 0.5rem;"><a href="#services" style="color: var(--text-muted); text-decoration: none;">Services</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="#rates" style="color: var(--text-muted); text-decoration: none;">Price Guide</a></li>
-                    <li style="margin-bottom: 0.5rem;"><a href="#calculator" style="color: var(--text-muted); text-decoration: none;">Eco-Impact</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#services" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_services">Services</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#rates" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_rates">Price Guide</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="#calculator" style="color: var(--text-muted); text-decoration: none;" data-i18n="nav_impact">Eco-Impact</a></li>
                 </ul>
             </div>
             <div>
-                <h4 style="margin-bottom: 1.5rem; color: var(--secondary);">Contact Us</h4>
+                <h4 style="margin-bottom: 1.5rem; color: var(--secondary);" data-i18n="footer_contact">Contact Us</h4>
                 <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><i class="fas fa-phone"></i> +91 6201 243 683</p>
                 <p style="color: var(--text-muted); margin-bottom: 0.5rem;"><i class="fas fa-envelope"></i> info@smartkawaari.com</p>
-                <p style="color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> Serving Delhi, NCR & Surrounding Areas</p>
+                <p style="color: var(--text-muted);"><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_area">Serving Delhi, NCR & Surrounding Areas</span></p>
             </div>
         </div>
         <div style="text-align: center; padding: 2rem; border-top: 1px solid #e5e7eb; color: var(--text-muted); font-size: 0.9rem;">
